@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Apply";
+}
+<h1 class="h4 text-center">Meeting Attendance Form</h1>
+
+<form action="">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" name="Name" id="Name" class="form-control"/>
+    </div>
+    <div class="mb-3">
+        <label for="Phone" class="form-label">Phone</label>
+        <input type="text" name="Phone" id="Phone" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="text" name="Email" id="Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="WillAttend" class="form-label">Attend Status</label>
+        <select name="WillAttend" id="WillAttend" class="form-select">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
