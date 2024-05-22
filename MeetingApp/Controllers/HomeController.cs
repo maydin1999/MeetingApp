@@ -7,12 +7,13 @@ namespace MeetingApp.Controllers
     {
         public IActionResult Index()
         {
+            int UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
             var meetingInfo = new MeetingInfo()
             {
                 Id = 1,
                 Location = "Tekirdağ - Çorlu",
                 Date = new DateTime(2024,10,23, 19, 0, 0),
-                NumberOfPeople = 30
+                NumberOfPeople = UserCount
 
             };
             int hour = DateTime.Now.Hour;
